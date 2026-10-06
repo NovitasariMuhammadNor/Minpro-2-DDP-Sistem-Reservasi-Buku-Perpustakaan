@@ -49,13 +49,13 @@ def buat_id_baru():
 def tambah_reservasi(): 
     judul = input("masukan judul buku: ")
     nama = input("masukan nama pemesan: ")
-    tanggal = input("masukan tanggal reservasi (YYYY-MM-DD): ")
+    tanggal = input("masukan tanggal reservasi (%Y-%m-%d): ")
     status = "menunggu"
     if judul == "" or nama == "":
         print("judul dan nama tidak boleh kosong.\n")
         return
     try:
-        datetime.datetime.strptime(tanggal, "YYYY-MM-DD")
+        datetime.datetime.strptime(tanggal, "%Y-%m-%d")
     except ValueError:
         print("format tanggal salah! contoh: 2026-11-31\n")
         return
