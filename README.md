@@ -112,7 +112,11 @@ Menu 5 mengakhiri program, sedangkan pilihan lain menampilkan pesan tidak valid.
 
 
 
+# Nilai Tambah    
 
+1.  validasi input menggunakan error handling. Program memakai "try-except ValueError" saat pengguna memasukkan ID yang bukan angka pada fungsi "ubah_status()" dan "hapus_reservasi()", serta saat format tanggal salah pada fungsi "tambah_reservasi()". Dengan begitu, input yang salah hanya menampilkan pesan error dan program tidak langsung berhenti.
+
+2. program menerapkan tiga library sesuai kebutuhan. Library "datetime" digunakan untuk memvalidasi format tanggal reservasi, "os" untuk membersihkan layar terminal saat program dimulai, dan "time" untuk memberi jeda 1 detik setelah login berhasil.
 
 
 
