@@ -27,8 +27,6 @@ def login():
         print("login gagal! username atau password salah.")
         return False
     
-
-    
 reservasi = {
     1: {"judul": "Algoritma Pemrograman", "nama": "vita", "tanggal": "2026-09-11", "status": "Menunggu"},
     2: {"judul": "Basis Data", "nama": "Andi", "tanggal": "2026-09-12", "status": "Selesai"},
